@@ -1,0 +1,23 @@
+{
+    "Type" : "Label",
+
+    "ShowAttributeList" : ["备注","名称","标题","左边","顶边","宽度","高度"],
+    "备注" : "",
+    "名称" : "_标签",
+    "标题" : "标签",
+    "左边" : "20",
+    "顶边" : "20",
+    "宽度" : "10",
+    "高度" : "2",
+
+    "PrivateAttributeList" : [],
+
+    "DoubleClick" : "Null",
+    "TitleDirection" : "left",
+
+    "CreatScript" : [
+        "{{名称}} = Label({{Window}},text='{{标题}}',anchor=W)",
+        "{{名称}}.pack()",
+        "{{名称}}.place(x = {{左边}}, y = {{顶边}}, width={{宽度}} ,height={{高度}} , anchor = NW)"
+    ]
+}

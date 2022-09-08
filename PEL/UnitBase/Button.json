@@ -1,0 +1,25 @@
+{
+    "Type" : "Button",
+
+    "ShowAttributeList" : ["备注","名称","标题","左边","顶边","宽度","高度"],
+    "备注" : "",
+    "名称" : "_按钮",
+    "标题" : "按钮",
+    "左边" : "20",
+    "顶边" : "20",
+    "宽度" : "10",
+    "高度" : "2",
+
+    "PrivateAttributeList" : [],
+
+    "DoubleClick" : "FuncNull",
+    "TitleDirection" : "middle",
+
+    "CreatScript" : [
+        "{{名称}} = Button({{Window}},width=int({{宽度}}/8),height=int({{高度}}/19),text='{{标题}}',command={{DoubleClick}})",
+        "{{名称}}.pack()",
+        "{{名称}}.place(x = {{左边}}, y = {{顶边}}, width={{宽度}} ,height={{高度}} , anchor = NW)"
+    ],
+
+    "DoubleClickScript" : "{{名称}}_被点击"
+}
